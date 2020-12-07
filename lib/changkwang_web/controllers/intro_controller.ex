@@ -1,4 +1,4 @@
-defmodule ChangkwangWeb.PageController do
+defmodule ChangkwangWeb.IntroController do
   use ChangkwangWeb, :controller
 
   def index(conn, _params) do

@@ -1,0 +1,309 @@
+<div class="relative bg-gray-50">
+<div class="mx-auto max-w-7xl w-full pt-14 pb-16 text-center lg:py-36 lg:text-left">
+  <div class="px-4 lg:w-1/2 sm:px-8 xl:pr-16">
+    <h2 class="text-4xl tracking-tight leading-10 font-sans font-bold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl">
+      미국 애틀란타
+      <br class="xl:hidden">
+    </h2>
+    <h2 class="mt-3 text-4xl tracking-tight leading-10 font-sans font-bold text-red-500 sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl">
+      창광 교회
+    </h2>
+
+    <p class="mt-3 max-w-md mx-auto text-lg text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
+      하나님이 세상을 이처럼 사랑하사 독생자를 주셨으니 이는 그를 믿는 자마다 멸망하지 않고 영생을 얻게 하려 하심이라
+    </p>
+    <br />
+    <p>요한복음 3장 16절</p>
+    <div class="mt-10 sm:flex sm:justify-center lg:justify-start">
+      <div class="rounded-md shadow">
+        <a href="#" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-blue-600 hover:bg-blue-500 focus:outline-none focus:blue-blue-700 focus:shadow-outline-blue transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
+          교회 소개
+        </a>
+      </div>
+      <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
+        <a href="#" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-blue-600 bg-white hover:text-blue-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
+          설교 영상
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
+  <img class="absolute inset-0 w-full h-full object-cover" src="<%= Routes.static_path(@conn, "/images/church-front.jpg") %>" alt="Chang Kwang Church">
+</div>
+
+
+</div>
+
+
+<!-- This example requires Tailwind CSS v2.0+ -->
+<div class="py-12 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="lg:text-center mb-10 ">
+      <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+        창광 교회의 신앙 고백  
+      </p>
+      <p class="mt-8 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+
+        아들을 낳으리니 이름을 예수라 하라 이는 그가 자기 백성을 그들의 죄에서 구원할 자이심이라 하니라 (마태복음 1:21)
+      </p>
+    </div>
+
+    <div class="mt-14">
+      <dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
+        <div class="flex">
+          <div class="flex-shrink-0">
+            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+              <!-- Heroicon name: globe-alt -->
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+            </div>
+          </div>
+          <div class="ml-4">
+            <dt class="text-lg leading-6 font-bold text-gray-900">
+              오직 성경
+            </dt>
+            <dd class="mt-2 text-base text-gray-500">
+              성경은 유일신 하나님의 영감으로 쓰여진 권위 있는 말씀이며 기독교 교리의 유일한 원천으로, 누구에게나 공개되어 있고, 문체가 명료하며 자기 해석이 가능하다는 것을 믿습니다.
+            </dd>
+          </div>
+        </div>
+
+        <div class="flex">
+          <div class="flex-shrink-0">
+            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+              <!-- Heroicon name: scale -->
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+            </div>
+          </div>
+          <div class="ml-4">
+            <dt class="text-lg font-bold leading-6 text-gray-900">
+              오직 그리스도 
+            </dt>
+            <dd class="mt-2 text-base text-gray-500">
+              구원은 오직 예수 그리스도의 속죄사역을 통해서만 얻을수 있으며 개인적 공로와는 관계없고 하나님과 인간 사이에 오직 중보자는 예수 그리스도만뿐입니다.
+              예수 그리스도없이는 구원을 받을수 없음을 믿습니다.
+            </dd>
+          </div>
+        </div>
+
+        <div class="flex">
+          <div class="flex-shrink-0">
+            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+              <!-- Heroicon name: lightning-bolt -->
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+            </div>
+          </div>
+          <div class="ml-4">
+            <dt class="text-lg leading-6 font-bold text-gray-900">
+              오직 은혜
+            </dt>
+            <dd class="mt-2 text-base text-gray-500">
+            예수 그리스도의 공효를 덧입혀 주는 것은 전적인 하나님의 선물로서 하나님이 인간 쪽에 아무런 조건을 찾지 않습니다.
+            "믿음" 역시 하나님의 선물이며, "믿음"은 구원의 은혜를 받는 '통로' 역할을 할 뿐이며 그것의 '대가'로 구원을 받지는 않는다 것을 믿습니다.
+            </dd>
+          </div>
+        </div>
+
+        <div class="flex">
+          <div class="flex-shrink-0">
+            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+              <!-- Heroicon name: annotation -->
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+            </div>
+          </div>
+          <div class="ml-4">
+            <dt class="text-lg leading-6 font-bold text-gray-900">
+              오직 믿음 
+            </dt>
+            <dd class="mt-2 text-base text-gray-500">
+              하나님이 내리시는 구원의 은혜는 오직 믿음을 통하여 받을 뿐이지 다른 어떤 것이 요구되지 않는다는 믿습니다.
+            </dd>
+          </div>
+        </div>
+
+        <div class="flex">
+          <div class="flex-shrink-0">
+            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+              <!-- Heroicon name: annotation -->
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+            </div>
+          </div>
+          <div class="ml-4">
+            <dt class="text-lg leading-6 font-bold text-gray-900">
+              오직 하나님께만 영광
+            </dt>
+            <dd class="mt-2 text-base text-gray-500">
+              성직자의 권위가 하나님의 권위와 혼동되던 기존의 교회에 반하여 모든 영광은 사람이 아닌 하나님에게로만 돌려야
+              함을 주장합니다. 또한 구원은 하나님이 시작하고 완성하시는 일이며 거기에 인간이 참여하는 부분은 없기 때문에
+              모든 영광을 하나님이 받는다는 것을 믿습니다.
+            </dd>
+          </div>
+        </div>
+      </dl>
+    </div>
+  </div>
+</div>
+
+<div class="py-12 bg-grey-100 max-w-7xl mx-auto ">
+  <ul class="grid gap-6 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1">
+
+    <li class="col-span-1 bg-white rounded-lg shadow">
+      <!-- Header -->
+      <div class="bg-white px-4 py-3 border-b border-gray-200 sm:px-6">
+        <div class="-ml-4 -mt-2 flex items-center justify-between flex-wrap sm:flex-nowrap">
+          <div class="ml-4 mt-2">
+            <h3 class="text-lg leading-6 font-medium text-gray-900">
+              창광 교회 설교
+            </h3>
+          </div>
+          <div class="ml-4 mt-2 flex-shrink-0">
+            <button type="button" class="relative inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+              전체 설교 보러 가기 
+            </button>
+          </div>
+        </div>
+      </div>
+      <table class="table-fixed w-full">
+        <thead>
+          <tr>
+            <th scope="col" class="w-2/4 px-6 py-3 bg-gray-50 text-left text-sm font-medium text-gray-500 tracking-wider">설교 제목</th>
+            <th scope="col" class="w-1/4 px-6 py-3 bg-gray-50 text-left text-sm font-medium text-gray-500 tracking-wider">설교 본문</th>
+            <th scope="col" class="w-1/4 px-6 py-3 bg-gray-50 text-left text-sm font-medium text-gray-500 tracking-wider">설교 날짜</th>
+          </tr>
+        </thead>
+        <tbody>
+           <!-- Odd row -->
+           <tr class="bg-white">
+             <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+             <a href="#">예수 앞에 나오면 </a> 
+             </td>
+             <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+               벧전 1장 5-6
+             </td>
+             <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                11/27/2020
+             </td>
+           </tr>
+           <!-- Even row -->
+           <tr class="bg-gray-50">
+             <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+             <a href="#">택함 받은 백성의 축복</a> 
+             </td>
+             <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+               이사야 1장 5-6
+             </td>
+             <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                12/27/2020
+             </td>
+           </tr>
+           <!-- Odd row -->
+           <tr class="bg-white">
+             <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+             <a href="#">예수 앞에 나오면 </a> 
+             </td>
+             <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+               벧전 1장 5-6
+             </td>
+             <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                11/27/2020
+             </td>
+           </tr>
+           <!-- Even row -->
+           <tr class="bg-gray-50">
+             <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+             <a href="#">택함 받은 백성의 축복</a> 
+             </td>
+             <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+               이사야 1장 5-6
+             </td>
+             <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                12/27/2020
+             </td>
+           </tr>
+        </tbody>
+      </table>
+    </li>
+
+    <li class="col-span-1 bg-white rounded-lg shadow ">
+      <!-- Header -->
+      <div class="bg-white px-4 py-3 border-b border-gray-200 sm:px-6">
+        <div class="-ml-4 -mt-2 flex items-center justify-between flex-wrap sm:flex-nowrap">
+          <div class="ml-4 mt-2">
+            <h3 class="text-lg leading-6 font-medium text-gray-900">
+              창광 교회 소식 
+            </h3>
+          </div>
+          <div class="ml-4 mt-2 flex-shrink-0">
+            <button type="button" class="relative inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+              전체 소식 보러 가기 
+            </button>
+          </div>
+        </div>
+      </div>
+      <table class="table-fixed w-full">
+        <thead>
+          <tr>
+            <th scope="col" class="w-2/4 px-6 py-3 bg-gray-50 text-left text-sm font-medium text-gray-500 tracking-wider">제목</th>
+            <th scope="col" class="w-1/4 px-6 py-3 bg-gray-50 text-left text-sm font-medium text-gray-500 tracking-wider">날짜</th>
+          </tr>
+        </thead>
+        <tbody>
+           <!-- Odd row -->
+           <tr class="bg-white">
+             <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+             <a href="#">예예수 앞에 나오면 수 앞에 나오면 </a> 
+             </td>
+             <td class="w-1/4 px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                11/27/2020
+             </td>
+           </tr>
+           <!-- Even row -->
+           <tr class="bg-gray-50">
+             <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+             <a href="#">택함 받은 백성의 축복</a> 
+             </td>
+             <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                12/27/2020
+             </td>
+           </tr>
+           <!-- Odd row -->
+           <tr class="bg-white">
+             <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+             <a href="#">예수 앞에 나오면 </a> 
+             </td>
+             <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                11/27/2020
+             </td>
+           </tr>
+           <!-- Even row -->
+           <tr class="bg-gray-50">
+             <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+             <a href="#">택함 받은 백성의 축복</a> 
+             </td>
+             <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                12/27/2020
+             </td>
+           </tr>
+        </tbody>
+      </table>
+    </li>
+  </ul>
+</div>
+
+
+<footer class="bg-gray-100">
+  <div class="max-w-7xl mx-auto py-8 px-4 overflow-hidden sm:px-6 lg:px-8">
+    <p class="text-center mb-5">창광 교회 연락처</p>
+    <p class=" text-center text-base text-gray-600">
+      (213)595-2345 / changkwangchurch@gmail.com
+    </p>
+    <p class="text-center text-base text-gray-600">
+        1884 W Olympic Blvd
+        Los Angeles, CA 90023
+    </p>
+    <p class="text-center text-base text-gray-600">
+      &copy; 2020 창광교회 All rights reserved.
+    </p>
+  </div>
+</footer>
+

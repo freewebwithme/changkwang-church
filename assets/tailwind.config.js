@@ -14,8 +14,11 @@ module.exports = {
       fontFamily: {
         sans: ["Nanum Myeongjo", "Inter var", ...defaultTheme.fontFamily.sans],
       },
+      backgroundImage: (theme) => ({
+        "intro-image": "url('/images/cross.jpg')",
+      }),
     },
   },
   variants: {},
-  plugins: [], //require("@tailwindcss/ui")],
+  plugins: [require("@tailwindcss/aspect-ratio")], //require("@tailwindcss/ui")],
 };

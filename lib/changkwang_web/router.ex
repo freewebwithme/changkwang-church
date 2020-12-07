@@ -16,7 +16,11 @@ defmodule ChangkwangWeb.Router do
   scope "/", ChangkwangWeb do
     pipe_through :browser
 
-    get "/", PageController, :index
+    get "/", HomeController, :index
+    get "/intro", IntroController, :index
+    get "/servants", ServantsController, :index
+    get "/news", NewsController, :index
+    get "/sermons", SermonsController, :index
   end
 
   # Other scopes may use custom stacks.

@@ -15,7 +15,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
       <div class="flex justify-between items-center py-6 md:justify-start md:space-x-10">
         <div class="w-0 flex-1 flex">
-          <a href="#" class="inline-flex">
+          <a href="<%= Routes.home_path(@conn, :index) %>" class="inline-flex">
             <img class="h-8 w-auto sm:h-10" src="<%= Routes.static_path(@conn, "/images/logo.png") %>" alt="ChangKwang">
             <p class="font-bold text-grey-800 text-3xl ml-5">창광교회</p> 
           </a>
@@ -29,13 +29,16 @@
           </button>
         </div>
         <nav class="hidden md:flex space-x-10">
-          <a href="#" class="text-gray-700 inline-flex items-center space-x-2 text-base leading-6 font-bold hover:text-gray-900 transition ease-in-out duration-150">
+          <a href="<%= Routes.intro_path(@conn, :index) %>" class="text-gray-700 inline-flex items-center space-x-2 text-base leading-6 font-bold hover:text-gray-900 transition ease-in-out duration-150">
             교회 소개
           </a>
-          <a href="#" class="text-base leading-6 font-bold text-gray-700 hover:text-gray-900 transition ease-in-out duration-150">
+          <a href="<%= Routes.servants_path(@conn, :index) %>" class="text-base leading-6 font-bold text-gray-700 hover:text-gray-900 transition ease-in-out duration-150">
+            섬기는 분들 
+          </a>
+          <a href="<%= Routes.news_path(@conn, :index) %>" class="text-base leading-6 font-bold text-gray-700 hover:text-gray-900 transition ease-in-out duration-150">
             교회 소식
           </a>
-          <a href="#" class="text-base leading-6 font-bold text-gray-700 hover:text-gray-900 transition ease-in-out duration-150">
+          <a href="<%= Routes.sermons_path(@conn, :index) %>" class="text-base leading-6 font-bold text-gray-700 hover:text-gray-900 transition ease-in-out duration-150">
             설교 영상
           </a>
         </nav>
