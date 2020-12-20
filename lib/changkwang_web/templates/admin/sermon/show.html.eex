@@ -1,0 +1,23 @@
+<h1>Show Sermon</h1>
+
+<ul>
+
+  <li>
+    <strong>Title:</strong>
+    <%= @sermon.title %>
+  </li>
+
+  <li>
+    <strong>Date:</strong>
+    <%= @sermon.date %>
+  </li>
+
+  <li>
+    <strong>Share code:</strong>
+    <%= @sermon.share_code %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.sermon_path(@conn, :edit, @sermon) %></span>
+<span><%= link "Back", to: Routes.sermon_path(@conn, :index) %></span>

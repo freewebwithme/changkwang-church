@@ -1,0 +1,2 @@
+<h1>설교 추가 하기</h1>
+<a href="<%= Routes.sermon_path(@conn, :index) %>">설교 페에지 가기</a>

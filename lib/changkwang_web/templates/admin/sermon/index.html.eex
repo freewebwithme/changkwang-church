@@ -1,0 +1,30 @@
+<h1>Listing Sermons</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Date</th>
+      <th>Share code</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for sermon <- @sermons do %>
+    <tr>
+      <td><%= sermon.title %></td>
+      <td><%= sermon.date %></td>
+      <td><%= sermon.share_code %></td>
+
+      <td>
+        <span><%= link "Show", to: Routes.sermon_path(@conn, :show, sermon) %></span>
+        <span><%= link "Edit", to: Routes.sermon_path(@conn, :edit, sermon) %></span>
+        <span><%= link "Delete", to: Routes.sermon_path(@conn, :delete, sermon), method: :delete, data: [confirm: "Are you sure?"] %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "New Sermon", to: Routes.sermon_path(@conn, :new) %></span>

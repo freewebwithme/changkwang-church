@@ -35,9 +35,6 @@
           <a href="<%= Routes.servants_path(@conn, :index) %>" class="text-base leading-6 font-bold text-gray-700 hover:text-gray-900 transition ease-in-out duration-150">
             섬기는 분들 
           </a>
-          <a href="<%= Routes.news_path(@conn, :index) %>" class="text-base leading-6 font-bold text-gray-700 hover:text-gray-900 transition ease-in-out duration-150">
-            교회 소식
-          </a>
           <a href="<%= Routes.sermons_path(@conn, :index) %>" class="text-base leading-6 font-bold text-gray-700 hover:text-gray-900 transition ease-in-out duration-150">
             설교 영상
           </a>

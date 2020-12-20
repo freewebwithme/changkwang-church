@@ -1,0 +1,5 @@
+<h1>Edit Sermon</h1>
+
+<%= render "form.html", Map.put(assigns, :action, Routes.sermon_path(@conn, :update, @sermon)) %>
+
+<span><%= link "Back", to: Routes.sermon_path(@conn, :index) %></span>

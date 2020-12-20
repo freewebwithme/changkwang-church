@@ -4,6 +4,8 @@
       <div class="text-base max-w-prose mx-auto lg:max-w-lg lg:ml-auto ">
         <h2 class="leading-6 text-blue-600 font-semibold tracking-wide uppercase">애틀란타 창광교회</h2>
         <h3 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">설교 동영상</h3>
+    <h4 class="leading-6 mt-5 text-red-600"><a href="https://www.youtube.com/channel/UCeQeVk_KZQjFis7pAOTnKQQ">Youtube로 설교 보러 가기</a></h4>
+
         <table class="mt-20 table-fixed w-full">
           <thead>
             <tr>
@@ -13,87 +15,29 @@
           </thead>
           <tbody>
              <!-- Odd row -->
-             <tr class="bg-white">
-               <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-               <button onclick="openModal()">
-                예예수 앞에 나오면 수 앞에 나오면
-               </button>
-               </td>
-               <td class="w-1/4 px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                  11/27/2020
-               </td>
-             </tr>
-             <!-- Even row -->
-             <tr class="bg-gray-50">
-               <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-               <a href="#">택함 받은 백성의 축복</a> 
-               </td>
-               <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                  12/27/2020
-               </td>
-             </tr>
-             <!-- Odd row -->
-             <tr class="bg-white">
-               <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-               <a href="#">예수 앞에 나오면 </a> 
-               </td>
-               <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                  11/27/2020
-               </td>
-             </tr>
-             <!-- Even row -->
-             <tr class="bg-gray-50">
-               <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-               <a href="#">택함 받은 백성의 축복</a> 
-               </td>
-               <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                  12/27/2020
-               </td>
-             </tr>
-             <!-- Odd row -->
-             <tr class="bg-white">
-               <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-               <a href="#">예예수 앞에 나오면 수 앞에 나오면 </a> 
-               </td>
-               <td class="w-1/4 px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                  11/27/2020
-               </td>
-             </tr>
-             <!-- Even row -->
-             <tr class="bg-gray-50">
-               <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-               <a href="#">택함 받은 백성의 축복</a> 
-               </td>
-               <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                  12/27/2020
-               </td>
-             </tr>
-             <!-- Odd row -->
-             <tr class="bg-white">
-               <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-               <a href="#">예수 앞에 나오면 </a> 
-               </td>
-               <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                  11/27/2020
-               </td>
-             </tr>
-             <!-- Even row -->
-             <tr class="bg-gray-50">
-               <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-               <a href="#">택함 받은 백성의 축복</a> 
-               </td>
-               <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                  12/27/2020
-               </td>
-             </tr>
+             <%= for sermon <- @sermons do %>
+              <tr class="bg-white">
+                
+                
+                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                
+                <button onclick="changeSermon('<%= sermon.title %>','<%= sermon.date %>', '<%= sermon.share_code %>' )">
+                  <%= sermon.title %>
+                </button>
+                </td>
+                <td class="w-1/4 px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                  <%= sermon.date %>
+                </td>
+              </tr>
+
+             <% end %>
           </tbody>
         </table>
 
-
+        <!--
         <nav class="border-t mt-10 border-gray-200 px-4 flex items-center justify-between sm:px-0">
           <div class="-mt-px w-0 flex-1 flex">
             <a href="#" class="border-t-2 border-transparent pt-4 pr-1 inline-flex items-center text-sm font-medium text-gray-500 hover:text-gray-700 hover:border-gray-300">
-              <!-- Heroicon name: arrow-narrow-left -->
               <svg class="mr-3 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                 <path fill-rule="evenodd" d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z" clip-rule="evenodd" />
               </svg>
@@ -104,7 +48,6 @@
             <a href="#" class="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 border-t-2 pt-4 px-4 inline-flex items-center text-sm font-medium">
               1
             </a>
-            <!-- Current: "border-indigo-500 text-indigo-600", Default: "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300" -->
             <a href="#" class="border-blue-500 text-blue-600 border-t-2 pt-4 px-4 inline-flex items-center text-sm font-medium" aria-current="page">
               2
             </a>
@@ -127,34 +70,51 @@
           <div class="-mt-px w-0 flex-1 flex justify-end">
             <a href="#" class="border-t-2 border-transparent pt-4 pl-1 inline-flex items-center text-sm font-medium text-gray-500 hover:text-gray-700 hover:border-gray-300">
               다음
-              <!-- Heroicon name: arrow-narrow-right -->
               <svg class="ml-3 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                 <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
               </svg>
             </a>
           </div>
         </nav>
+        -->
       </div>
     </div>
-
-    <div class=" lg:pl-8">
+    <div class=" lg:pl-8 mt-7">
       <div class="text-base max-w-prose mx-auto lg:max-w-lg lg:ml-auto ">
-        <h2 class="leading-6 text-blue-600 font-semibold tracking-wide uppercase">12/24/2020</h2>
-        <h3 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">예수님의 탄생</h3>
+        <h2 id="sermon-date" class="leading-6 text-blue-600 font-semibold tracking-wide uppercase"><%= @latest.date  %></h2>
+        <h3 id="sermon-title" class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl"><%= @latest.title %></h3>
      
         <div class="mt-20 bg-white overflow-hidden shadow rounded-lg">
-          <div class="px-4 py-5 sm:p-6 h-500">
+          <div id="video-parent" class="px-4 py-5 sm:p-6 h-500">
             <!-- Content goes here -->
-          <p>Sollicitudin tristique eros erat odio sed vitae, consequat turpis elementum. Lorem nibh vel, eget pretium arcu vitae. Eros eu viverra donec ut volutpat donec laoreet quam urna.</p>
-          <p>Bibendum eu nulla feugiat justo, elit adipiscing. Ut tristique sit nisi lorem pulvinar. Urna, laoreet fusce nibh leo. Dictum et et et sit. Faucibus sed non gravida lectus dignissim imperdiet a.</p>
-          <p>Dictum magnis risus phasellus vitae quam morbi. Quis lorem lorem arcu, metus, egestas netus cursus. In.</p>
-          <ul>
-            <li>Quis elit egestas venenatis mattis dignissim.</li>
-            <li>Cras cras lobortis vitae vivamus ultricies facilisis tempus.</li>
-            <li>Orci in sit morbi dignissim metus diam arcu pretium.</li>
-          </ul>
+            <embed id="sermon-video" width="460" height="315" src="https://www.youtube.com/embed/<%= @latest.share_code %>" frameborder="0" allow="fullscreen accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></embed> 
           </div>
         </div>
       </div>
   </div>
-</div>
+
+<script>
+  function changeSermon(title, date, link) {
+    var dateElm = document.getElementById("sermon-date");
+    dateElm.textContent = date;
+
+    var titleElm = document.getElementById("sermon-title");
+    titleElm.textContent = title;
+
+    var sermonVideoElm = document.getElementById("sermon-video");
+    //sermonVideoElm.attributes.src = 
+
+    var parent = document.getElementById("video-parent");
+    parent.removeChild(sermonVideoElm);
+      
+    var newSermonVideoElm = document.createElement("embed");     
+    newSermonVideoElm.id = "sermon-video";
+    newSermonVideoElm.width = "460";
+    newSermonVideoElm.height = "315";
+    newSermonVideoElm.src = "https://www.youtube.com/embed/" + link;
+    
+    parent.appendChild(newSermonVideoElm);
+
+
+  }
+</script>

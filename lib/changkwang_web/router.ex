@@ -13,14 +13,29 @@ defmodule ChangkwangWeb.Router do
     plug :accepts, ["json"]
   end
 
+  pipeline :admin do
+    plug ChangkwangWeb.Plugs.CheckAdmin
+  end
+
+  scope "/admin", ChangkwangWeb.Admin do
+    pipe_through [:browser, :admin]
+
+    get "/", DashboardController, :index
+
+    resources "/sermons", SermonController
+  end
+
   scope "/", ChangkwangWeb do
     pipe_through :browser
 
     get "/", HomeController, :index
     get "/intro", IntroController, :index
     get "/servants", ServantsController, :index
-    get "/news", NewsController, :index
+    # get "/news", NewsController, :index
     get "/sermons", SermonsController, :index
+
+    get "/login", LoginController, :index
+    post "/login", LoginController, :login
   end
 
   # Other scopes may use custom stacks.

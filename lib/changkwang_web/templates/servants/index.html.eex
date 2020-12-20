@@ -4,7 +4,7 @@
       <div class="space-y-5 sm:space-y-4">
         <h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl">섬기는 분들</h2>
         <h3 class="text-xl  tracking-tight sm:text-xl">김성덕 담임 목사 소개</h3>
-        <p class="text-xl text-gray-500">Nulla quam felis, enim faucibus proin velit, ornare id pretium. Augue ultrices sed arcu condimentum vestibulum suspendisse. Volutpat eu faucibus vivamus eget bibendum cras.</p>
+        <p class="text-xl text-gray-500"></p>
       </div>
       <div class="lg:col-span-2">
         <ul class="space-y-12 sm:grid sm:grid-cols-3 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:gap-x-8">
@@ -25,30 +25,6 @@
           </li>
           <li></li>
 
-          <li>
-            <div class="space-y-4">
-              <div class="aspect-w-2 aspect-h-2">
-                <img class="object-cover shadow-lg rounded-lg"
-                 src="<%= Routes.static_path(@conn, "/images/elder.png") %>" alt="">
-              </div>
-              <div class="text-lg leading-6 font-medium space-y-1">
-                <h3>전준영</h3>
-                <p class="text-indigo-600">시무 장로</p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="space-y-4">
-              <div class="aspect-w-2 aspect-h-2">
-                <img class="object-cover shadow-lg rounded-lg"
-                 src="<%= Routes.static_path(@conn, "/images/elder.png") %>" alt="">
-              </div>
-              <div class="text-lg leading-6 font-medium space-y-1">
-                <h3>전준영</h3>
-                <p class="text-indigo-600">시무 장로</p>
-              </div>
-            </div>
-          </li>
           <li>
             <div class="space-y-4">
               <div class="aspect-w-2 aspect-h-2">
